@@ -72,7 +72,7 @@ export default function DogCarousel() {
 
   return (
     <section className="carousel" id="dogs">
-      <h2>Наши собаки 🐾</h2>
+      <h2>Наши собаки</h2>
       <div className="carousel-container-wrapper">
         <button className="carousel-button prev" onClick={prevSlide}>
           ❮
