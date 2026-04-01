@@ -1,0 +1,169 @@
+.carousel {
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0c151a;
+}
+
+.carousel-container-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.carousel-wrapper {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+  -ms-overflow-style: none;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap;
+  padding: 5px 0;
+}
+
+/* Стили для ссылок внутри карусели */
+.carousel-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dog-card {
+  flex: 0 0 auto;
+  width: 250px;
+  background-color: #0c151a;
+  border-radius: 15px;
+  padding: 10px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, z-index 0s;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  color: #D4AF94;
+}
+
+.dog-card:hover {
+  transform: scale(1.07) translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  z-index: 10;
+  position: relative;
+}
+
+.dog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dog-card:hover img {
+  transform: scale(1.02);
+}
+
+.dog-card h3 {
+  color: #D4AF94;
+  margin: 10px 0 5px 0;
+  font-size: 1.2rem;
+}
+
+.dog-card p {
+  color: #D4AF94;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.carousel-button {
+  background-color: #D4AF94;
+  color: #0c151a;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 20;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.carousel-button:hover {
+  background-color: #b48b64;
+  transform: scale(1.1);
+}
+
+.carousel-button:active {
+  transform: scale(0.95);
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  .carousel {
+    padding: 30px 0;
+  }
+  
+  .carousel h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-container-wrapper {
+    gap: 5px;
+    padding: 0 10px;
+  }
+  
+  .dog-card {
+    width: 220px;
+  }
+  
+  .dog-card img {
+    height: 180px;
+  }
+  
+  .carousel-button {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+/* маленькие экраны */
+@media (max-width: 480px) {
+  .dog-card {
+    width: 200px;
+  }
+  
+  .dog-card img {
+    height: 160px;
+  }
+  
+  .carousel-button {
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+  }
+}

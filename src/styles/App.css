@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f0ea;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f0ea;
+  color: #D4AF94;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: #D4AF94;
+  position: relative;
+  font-weight: 500;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #D4AF94;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+section + section {
+  margin-top: 40px;
+}
+
+h1, h2, h3, p {
+  margin: 0 0 20px;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #D4AF94;
+  background-color: #2e2929;
+  color: #D4AF94;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #D4AF94aa;
+}
+
+button {
+  border: none;
+  background-color: #D4AF94;
+  color: #3a3434;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b48b64;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}

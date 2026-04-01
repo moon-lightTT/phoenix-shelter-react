@@ -1,0 +1,13 @@
+.layout {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #f5f0ea;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.layout {
+  border-radius: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
