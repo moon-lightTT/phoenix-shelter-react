@@ -108,7 +108,7 @@ export default function DogDetail() {
       {showForm && (
         <div className="dog-detail-modal-overlay" onClick={() => setShowForm(false)}>
           <div className="dog-detail-modal-content" onClick={(e) => e.stopPropagation()}>
-            <h3>Заявка на знакомство</h3>
+            <h3>Заявка на знакомство с {dog.name}</h3>
             <form onSubmit={handleSubmit}>
               <div className="dog-detail-form-group">
                 <label>Ваше имя *</label>

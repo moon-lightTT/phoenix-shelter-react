@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/Donate.css";
+import { getImagePath } from "../utils/paths";
 
 export default function Donate() {
   const [showMoneyModal, setShowMoneyModal] = useState(false);
@@ -32,7 +33,7 @@ export default function Donate() {
         <h2>Помочь приюту</h2>
         <div className="donate-buttons">
           <div className="donate-button-wrapper">
-            <img src="/images/paw.png" alt="Лапа" className="donate-icon paw-icon" />
+            <img src={getImagePath("/images/paw.png")} alt="Лапа" className="donate-icon paw-icon" />
             <button className="money" onClick={() => setShowMoneyModal(true)}>
               Пожертвовать деньги
             </button>
@@ -41,7 +42,7 @@ export default function Donate() {
             <button className="food" onClick={() => setShowFoodModal(true)}>
               Отправить корм
             </button>
-            <img src="/images/paw.png" alt="Корм" className="donate-icon feed-icon" />
+            <img src={getImagePath("/images/feed.png")} alt="Корм" className="donate-icon feed-icon" />
           </div>
         </div>
       </section>
